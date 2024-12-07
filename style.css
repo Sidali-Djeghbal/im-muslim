@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'QuranFont';
+  src: url('fonts/UthmanicHafs1Ver18.ttf') format('truetype'); /* Adjust path if necessary */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  background: #00101a;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  font-style: normal;
+}
+.webgl {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.muslim{
+  position: absolute;
+  top: 50%;
+
+}
+
+button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-appearance: none;
+  background: rgb(10, 0, 72);
+  color: white;
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+button:hover{
+  background: rgb(0, 0, 255);
+}
+
+.btn1{
+  top:-65%;
+  height: 140px;
+  background-color: transparent !important;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: auto;
+  font-size: 100px;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url('palestine.jpg'); /* Replace with your image */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.quran{
+  font-family: 'QuranFont', serif;
+}
+
+
+h1 {
+  position: absolute;
+  color: white;
+  top: 3rem;
+  left: 3rem;
+  right: 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+footer {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+aside {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10rem;
+  top: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  line-height: 1;
+  text-align: center;
+}
