@@ -26,6 +26,7 @@ body {
 }
 
 .muslim{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   position: absolute;
   top: 50%;
 
@@ -54,19 +55,20 @@ button:hover{
 
 .btn1{
   top:-65%;
-  height: 140px;
+  height: 150px;
   background-color: transparent !important;
   color: rgb(255, 255, 255);
   text-align: center;
   margin: auto;
-  font-size: 100px;
-  width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-image: url('palestine.jpg'); /* Replace with your image */
+  font-size: 120px;
+  width: 89%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url('palestine.jpg');
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
+
 
 .quran{
   font-family: 'QuranFont', serif;
@@ -98,6 +100,7 @@ a {
 }
 
 aside {
+  width: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -109,4 +112,76 @@ aside {
   white-space: pre-wrap;
   line-height: 1;
   text-align: center;
+}
+
+@media screen and (max-width : 1024px) {
+  .btn1{
+    top:-55%;
+    font-size: 100px;
+}
+}
+
+@media screen and (max-width : 768px) {
+  aside{
+    font-size: 1rem;
+  }
+
+  .bg-txt{
+    font-size: 40px;
+  }
+
+ .play-btn{
+    font-size: 10px;
+  }
+
+  .btn1{
+    top:-55%;
+    font-size: 80px;
+}
+
+footer{
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width : 610px) {
+
+  aside{
+    font-size: 1rem;
+  }
+
+  .bg-txt{
+    font-size: 30px;
+  }
+
+ .play-btn{
+    margin-bottom: 50px;
+    font-size: 10px;
+  }
+
+  .btn1{
+    top:-55%;
+    font-size: 60px;
+}
+
+footer{
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width : 460px) {
+
+  .btn1{
+    height: 220px;
+    background-size: cover;
+  }
+
+  aside{
+    font-size: 0.9rem;
+  }
+
+  .btn1{
+    top:-55%;
+    font-size: 50px;
+}
 }
