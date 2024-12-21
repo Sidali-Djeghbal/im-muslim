@@ -261,7 +261,7 @@ class World {
       this.sound = new THREE.Audio(listener);
       const audioLoader = new THREE.AudioLoader();
       audioLoader.load(
-        "quran.mp3",
+        "quran.mp3", ////// audio changemenet
         (buffer) => {
           this.sound.setBuffer(buffer);
           this.sound.setLoop(false);
