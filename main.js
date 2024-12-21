@@ -231,7 +231,7 @@ class World {
     this.addOctahedrons();
   }
   addButton() {
-    this.audioBtn = document.getElementById("play-music");
+    this.audioBtn = document.getElementById("play-quran");
     this.audioBtn.addEventListener("click", () => {
       this.audioBtn.disabled = true;
       if (this.analyser) {
@@ -246,14 +246,14 @@ class World {
         });
       } else {
         this.audioBtn.textContent = "Loading...";
-        this.loadMusic().then(() => {
+        this.loadQuran().then(() => {
           console.log("Quran loaded");
         });
       }
     });
   }
 
-  loadMusic() {
+  loadQuran() {
     return new Promise((resolve) => {
       const listener = new THREE.AudioListener();
       this.camera.add(listener);
@@ -261,7 +261,7 @@ class World {
       this.sound = new THREE.Audio(listener);
       const audioLoader = new THREE.AudioLoader();
       audioLoader.load(
-        "recording.mp3", ////// audio changemenet
+        "quran.mp3",
         (buffer) => {
           this.sound.setBuffer(buffer);
           this.sound.setLoop(false);
